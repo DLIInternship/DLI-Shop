@@ -45,7 +45,7 @@
 											</a>
 										</td>
 										<td>
-											<a href="product-detail-left-sidebar.html" class="product-name">Ini Handphone</a>
+											<a href="product-detail-left-sidebar.html" class="product-name"><?= $row->title ?></a>
 										</td>
 										<td class="text-center">
 											Rp.<?= number_format($row->price, 0, ',', '.') ?>,-

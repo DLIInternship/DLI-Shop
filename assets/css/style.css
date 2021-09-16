@@ -9,7 +9,7 @@
 	padding-left: 1.5625pc;
 }
 [class~="btn"]:hover {
-	background: #78b144;
+	background: #991638;
 }
 [class~="btn"] {
 	padding-bottom: 6.75pt;
@@ -33,13 +33,13 @@ body {
 	-webkit-transition: all 0.3s ease-in 0.1s;
 }
 [class~="btn"]:hover {
-	border-left-color: #78b144;
+	border-left-color: #991638;
 }
 [class~="btn"] {
 	padding-top: 6.75pt;
 }
 [class~="btn"]:hover {
-	border-bottom-color: #78b144;
+	border-bottom-color: #991638;
 }
 [class~="form"] form input[type="text"] {
 	width: 100%;
@@ -69,7 +69,7 @@ body {
 	-ms-transition: all 0.3s ease-in 0.1s;
 }
 [class~="btn"]:hover {
-	border-right-color: #78b144;
+	border-right-color: #991638;
 }
 [class~="owl-theme"] [class~="owl-dots"] [class~="owl-dot"] span,
 .owl-theme .owl-dots .owl-dot {
@@ -146,7 +146,7 @@ body {
 	border-right-color: transparent;
 }
 [class~="btn"]:hover {
-	border-top-color: #78b144;
+	border-top-color: #991638;
 }
 [class~="owl-theme"] [class~="owl-dots"] [class~="owl-dot"] span {
 	margin-left: 0.125pc;
@@ -195,22 +195,22 @@ body {
 	padding-bottom: 0.625pc;
 }
 .btn-primary:hover {
-	background: #3ba66b;
+	background: #991638;
 }
 [class~="btn"] {
 	font-family: "Playfair Display", serif;
 }
 a:hover {
-	color: #78b144;
+	color: #c0002f;
 }
 .btn-primary:hover {
-	border-left-color: #3ba66b;
+	border-left-color: #991638;
 }
 [class~="btn"] {
 	font-weight: 700;
 }
 .btn-primary:hover {
-	border-bottom-color: #3ba66b;
+	border-bottom-color: #991638;
 }
 #page-preloader [class~="page-loading"] [class~="dot"] {
 	width: 24px;
@@ -229,13 +229,13 @@ a:hover {
 	padding-top: 0.625pc;
 }
 .btn-primary:hover {
-	border-right-color: #3ba66b;
+	border-right-color: #991638;
 }
 [class~="btn-primary"] {
-	background: #78b144;
+	background: #c0002f;
 }
 .btn-primary:hover {
-	border-top-color: #3ba66b;
+	border-top-color: #991638;
 }
 [class~="form"] form input[type="search"],
 [class~="form"] form textarea {
@@ -11306,7 +11306,7 @@ input {
 	padding-bottom: 0;
 }
 [class~="home-4"] #footer [class~="footer"] [class~="footer-wrap"]:before {
-	background: url("../img/bg-footer-4.png");
+	background: url("../img/bg-footer.png");
 }
 [class~="sidebar"] [class~="tags"] ul li {
 	border-left-color: #e3e0d3;
@@ -12986,7 +12986,7 @@ input {
 	[class~="filter-item"]
 	[class~="filter-content"]
 	ul::-webkit-scrollbar-thumb {
-	background-color: #78b144;
+	background-color: #c0002f;
 }
 [class~="product-category-page"]
 	[class~="products-block"][class~="layout-5"]
@@ -13163,7 +13163,7 @@ input {
 	ul
 	li[class~="active"]
 	a {
-	color: #78b144;
+	color: #c0002f;
 }
 .product-quantity .qty .input-group .adjust-qty .adjust-btn {
 	-ms-border-radius: 0 0.03125in 0 0;
@@ -13548,7 +13548,7 @@ input {
 	width: 6.770833333in;
 }
 [class~="page-checkout"] [class~="panel-title"] > a {
-	color: #78b144;
+	color: #c0002f;
 }
 [class~="contact-page"] [class~="contact-info"] [class~="content"] {
 	margin-top: -0.0625pc;
@@ -13557,14 +13557,14 @@ input {
 	padding-right: 0;
 }
 [class~="sidebar"] [class~="tags"] ul li:hover {
-	border-left-color: #78b144;
+	border-left-color: #c0002f;
 }
 [class~="product-detail"]
 	[class~="products-block"]
 	[class~="product-item"]
 	[class~="product-buttons"]
 	[class~="add-to-cart"] {
-	background: #78b144;
+	background: #c0002f;
 }
 [class~="product-detail"]
 	[class~="payment-intro"]
@@ -13583,7 +13583,7 @@ input {
 	border-radius: 0.3125pc;
 }
 [class~="sidebar"] [class~="tags"] ul li:hover {
-	border-bottom-color: #78b144;
+	border-bottom-color: #c0002f;
 }
 [class~="product-detail"]
 	[class~="payment-intro"]
@@ -14280,7 +14280,7 @@ input {
 	content: "";
 }
 [class~="post-item"] [class~="post-readmore"] a {
-	color: #78b144;
+	color: #c0002f;
 }
 .product-detail .payment-intro .block-content .item {
 	border-bottom-style: solid;
@@ -14315,7 +14315,7 @@ input {
 	width: 24px;
 }
 #breadcrumb {
-	background: url("../img/bg-breadcrumb.jpg") no-repeat scroll 0 0;
+	background: url("../img/bg-red.png") no-repeat scroll 0 0;
 }
 [class~="newsletter-popup"] [class~="popup"] {
 	border-radius: 5px;
@@ -15007,9 +15007,12 @@ input {
 .newsletter-popup {
 	background-color: rgba(0, 0, 0, 0.7);
 }
-.sticky-top {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-	z-index: 1020;
+.mb {
+	margin-bottom: 50px;
+}
+.rounded {
+	width: 200px;
+	height: 50px;
+	border: 4px solid black;
+	border-radius: 70px;
 }
