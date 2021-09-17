@@ -259,10 +259,13 @@
 											</div>								
 										<?php else : ?>
 											<div class="item">
-												<a href="<?= base_url('user') ?>" title="Log in to your customer account"><i class="fa fa-cog"></i>My Account</a>
+												<a href="<?= base_url('profile') ?>" title="Log in to your customer account"><i class="fa fa-cog"></i>My Account</a>
 											</div>
 											<div class="item">
 												<a href="<?= base_url('myorder') ?>"><i class="fa fa-credit-card"></i>Orders</a>
+											</div>
+											<div class="item">
+												<a href="<?= base_url('pass') ?>"><i class="fa fa-unlock-alt"></i>Change Password</a>
 											</div>
 											<div class="item">
 												<a href="<?= base_url('logout') ?>"><i class="fa fa-sign-out"></i>Logout</a>
