@@ -295,7 +295,7 @@
 				
 
 <!-- Partners -->
-				<div id="partners" class="section partners" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+				<div id="partners" class="section partners mb" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
 					<div class="block-content">
 						<div class="container">
 							<div class="partners-wrap owl-theme owl-carousel">

@@ -1,5 +1,5 @@
 <div class="wrapper">
-                <div class="container-fluid section col-md-offset-1 col-md-10">
+                <div class="container-fluid section col-md-offset-1 col-md-10 mb">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card strpied-tabled-with-hover">
@@ -9,16 +9,16 @@
                                 <div class="card-body table-full-width table-responsive">
                                     <table class="table table-hover table-striped">
                                         <thead>
-                                            <th>Nomor</th>
-                                            <th>Tanggal</th>
-                                            <th>Total</th>
-                                            <th>Status</th>
-                                            <th>Payment Confirmation</th>
+                                            <th class="text-center">Nomor</th>
+                                            <th class="text-center">Tanggal</th>
+                                            <th class="text-center">Total</th>
+                                            <th class="text-center">Status</th>
+                                            <th class="text-center">Payment Confirmation</th>
                                             <th>
                                         </thead>
                                         <tbody>
                                             <?php foreach ($content as $row) : ?>
-                                                <tr>
+                                                <tr class="text-center">
                                                     <td>
                                                         <strong>#<?= $row->invoice ?></strong>
                                                     </td>
@@ -27,8 +27,8 @@
                                                     <td>
                                                         <?php $this->load->view('layouts/_status', ['status' => $row->status]) ?>
                                                     </td>
-                                                    <td class="col-md-offset-5">
-                                                        <a href="<?= base_url("myorder/detail/$row->invoice") ?>"><button class="btn btn-primary"><i class="fa fa-angle-double-right"></i></button></a>
+                                                    <td>
+                                                        <button type="submit" class="btn btn-primary"><a href="<?= base_url("myorder/detail/$row->invoice") ?>"><i class="fa fa-angle-double-right"></i></a></button>
                                                     </td>
                                                 </tr>
                                             <?php endforeach ?>

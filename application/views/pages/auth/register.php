@@ -13,7 +13,7 @@
 					</div>
 				</div>
 
-    <div class="container">
+    <div class="container mb">
 					<div class="login-page">
 						<div class="login-form form">
 							<div class="block-title">

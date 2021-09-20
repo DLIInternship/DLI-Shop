@@ -13,7 +13,7 @@
 					</div>
 				</div>
 
-    <div class="container">
+    <div class="container mb">
 
 					<div class="login-page">
 						<div class="login-form form mb">
@@ -44,11 +44,14 @@
 										<a href="<?= base_url('register');?>">Register</a>
 									</div>
 								</div>
+								<div class="text-center"> 
+									<h3 class="title">Login dengan : </h3>
+								</div>
 								<div class="container">
-                                    <img src="assets/img/facebook.png" alt="">
-                                    <img src="assets/img/google.png" alt="">
-                                    <img src="assets/img/twitter.png" alt="">
-                                    <img src="assets/img/linkedin.png" alt="">
+									<div class="col-md-3"><img src="assets/img/icon/icon-google.png" alt=""></div>
+									<div class="col-md-3"><img src="assets/img/icon/icon-facebook.png" alt=""></div>
+									<div class="col-md-3"><img src="assets/img/icon/icon-linkedin.png" alt=""></div>
+									<div class="col-md-3"><img src="assets/img/icon/icon-twitter.png" alt=""></div>
                                 </div>
 							<?= form_close() ?>
 						</div>
