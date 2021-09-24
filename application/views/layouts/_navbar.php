@@ -12,7 +12,7 @@
 										</li>
 										
 										<li class="dropdown">
-											<a href="" title="Product">Product</a>
+											<a href="" title="Product">Produk</a>
 											<div class="dropdown-menu">
 												<ul>
 													<li class="has-image dropdown-submenu">
@@ -183,7 +183,7 @@
 										</li>									
 										
 										<li class="dropdown">
-											<a href="" title="Page">Page</a>
+											<a href="" title="Page">Halaman</a>
 											<div class="dropdown-menu">
 												<ul>
 													<li class="has-sub">
@@ -204,7 +204,7 @@
 										</li>
 
 										<li>
-											<a href="#footer">About Us</a>
+											<a href="#footer">TTentang Kami</a>
 										</li>
 
 									</ul>
@@ -252,23 +252,23 @@
 									<div class="dropdown-menu">	
 										<?php if (!$this->session->userdata('is_login')) : ?>	
 											<div class="item">
-												<a href="<?= base_url('login') ?>" title="Log in to your customer account"><i class="fa fa-sign-in"></i>Login</a>
+												<a href="<?= base_url('login') ?>" title="Log in to your customer account"><i class="fa fa-sign-in"></i>Masuk</a>
 											</div>
 											<div class="item">
-												<a href="<?= base_url('register') ?>" title="Register Account"><i class="fa fa-user"></i>Register</a>
+												<a href="<?= base_url('register') ?>" title="Register Account"><i class="fa fa-user"></i>Daftar</a>
 											</div>								
 										<?php else : ?>
 											<div class="item">
-												<a href="<?= base_url('profile') ?>" title="Log in to your customer account"><i class="fa fa-cog"></i>My Account</a>
+												<a href="<?= base_url('profile') ?>" title="Log in to your customer account"><i class="fa fa-cog"></i>Profil</a>
 											</div>
 											<div class="item">
-												<a href="<?= base_url('myorder') ?>"><i class="fa fa-credit-card"></i>Orders</a>
+												<a href="<?= base_url('myorder') ?>"><i class="fa fa-credit-card"></i>Order</a>
 											</div>
 											<div class="item">
-												<a href="<?= base_url('pass') ?>"><i class="fa fa-unlock-alt"></i>Change Password</a>
+												<a href="<?= base_url('pass') ?>"><i class="fa fa-unlock-alt"></i>Ubah Password</a>
 											</div>
 											<div class="item">
-												<a href="<?= base_url('logout') ?>"><i class="fa fa-sign-out"></i>Logout</a>
+												<a href="<?= base_url('logout') ?>"><i class="fa fa-sign-out"></i>Keluar</a>
 											</div>
 										<?php endif ?>
 									</div>

@@ -26,12 +26,6 @@
 						<div class="tab-nav" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="300">
 							<ul>
 								<li class="active">
-									<a data-toggle="tab" href="#all-products">
-										<span>All</span>
-										<span>Products</span>
-									</a>
-								</li>
-								<li>
 									<a data-toggle="tab" href="#platform_open_learning">
 										<span>Platform Open</span>
 										<span>Learning</span>
@@ -60,8 +54,9 @@
 						
 						<!-- Tab Content -->
 						<div class="tab-content" data-aos="fade-up" data-aos-duration="2000">
-							<!-- All Products -->
-							<div role="tabpanel" class="tab-pane fade in active" id="all-products">
+							
+							<!-- Platform Open Learning -->
+							<div role="tabpanel" class="tab-pane fade in active" id="platform_open_learning">
 								<div class="products owl-theme owl-carousel">
 									<?php foreach ($content as $row) : ?>
 										<div class="product-item">
@@ -72,7 +67,7 @@
 											</div>
 											
 											<div class="product-title">
-												<a href="product-detail-left-sidebar.html">
+												<a href="<?= $row->id ? base_url("images/product/$row->image") : base_url("details") ?>">
 													<?= $row->product_title ?>
 												</a>
 											</div>
@@ -90,61 +85,12 @@
 											</div>
 															
 											<div class="product-buttons">
-												<form action="<?= base_url('cart/add') ?>" method="POST">
-												<input type="hidden" name="id_product" value="<?= $row->id ?>">
-												<input type="number" name="qty" value="1" class="form-control">
-													<button type="submit">
-														<i class="fa fa-shopping-basket" aria-hidden="true"></i>
-													</button>
-												</form>
+												<a class="quickview" href="#">
+													<i class="fa fa-eye" aria-hidden="true"></i>
+												</a>
 											</div>
 										</div>
-									<?php endforeach ?>
-								</div>
-							</div>
-							
-							<!-- Platform Open Learning -->
-							<div role="tabpanel" class="tab-pane fade" id="platform_open_learning">
-								<div class="products owl-theme owl-carousel">
-									<div class="product-item">
-										<div class="product-image">
-											<a href="product-detail-left-sidebar.html">
-												<img src="img/product/8.jpg" alt="Product Image">
-											</a>
-										</div>
-										
-										<div class="product-title">
-											<a href="product-detail-left-sidebar.html">
-												Organic Strawberry Fruits
-											</a>
-										</div>
-												
-										<div class="product-rating">
-											<div class="star on"></div>
-											<div class="star on"></div>
-											<div class="star on "></div>
-											<div class="star on"></div>
-											<div class="star"></div>
-										</div>
-												
-										<div class="product-price">
-											<span class="sale-price">$120.00</span>
-										</div>
-														
-										<div class="product-buttons">
-											<a class="add-to-cart" href="#">
-												<i class="fa fa-shopping-basket" aria-hidden="true"></i>
-											</a>
-											
-											<a class="add-wishlist" href="#">
-												<i class="fa fa-heart" aria-hidden="true"></i>												
-											</a>
-											
-											<a class="quickview" href="#">
-												<i class="fa fa-eye" aria-hidden="true"></i>
-											</a>
-										</div>
-									</div>	
+									<?php endforeach ?>	
 									
 								</div>
 							</div>
@@ -291,7 +237,6 @@
 						</div>
 					</div>
 				</div>
-				
 				
 
 <!-- Partners -->

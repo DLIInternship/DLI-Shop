@@ -28,7 +28,11 @@
                                                         <?php $this->load->view('layouts/_status', ['status' => $row->status]) ?>
                                                     </td>
                                                     <td>
-                                                        <button type="submit" class="btn btn-primary"><a href="<?= base_url("myorder/detail/$row->invoice") ?>"><i class="fa fa-angle-double-right"></i></a></button>
+                                                        <button class="btn btn-primary">
+                                                        <a href="<?= base_url("myorder/detail/$row->invoice") ?>">
+                                                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                                        </a>
+                                                        </button>
                                                     </td>
                                                 </tr>
                                             <?php endforeach ?>
