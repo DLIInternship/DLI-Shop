@@ -256,7 +256,7 @@
 											</div>
 											<div class="item">
 												<a href="<?= base_url('register') ?>" title="Register Account"><i class="fa fa-user"></i>Daftar</a>
-											</div>								
+											</div>
 										<?php else : ?>
 											<div class="item">
 												<a href="<?= base_url('profile') ?>" title="Log in to your customer account"><i class="fa fa-cog"></i>Profil</a>

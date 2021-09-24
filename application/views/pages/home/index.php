@@ -67,7 +67,7 @@
 											</div>
 											
 											<div class="product-title">
-												<a href="<?= $row->id ? base_url("images/product/$row->image") : base_url("details") ?>">
+												<a href="<?= base_url('details') ?>">
 													<?= $row->product_title ?>
 												</a>
 											</div>
