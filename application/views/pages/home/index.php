@@ -17,8 +17,8 @@
 <!-- Product - Best Sellers -->
 				<div id="category" class="section products-block product-tab nav-color show-hover nav-round best-sellers">
 					<div class="block-title" data-aos="zoom-in-down" data-aos-duration="2000">
-						<h2 class="title">Category <span>Product</span></h2>
-						<div class="sub-title">Here you can find a variety of interesting choices that we provide</div>
+						<h2 class="title">Kategori <span>Produk</span></h2>
+						<div class="sub-title">Disini kamu bisa menemukan berbagai pilihan menarik yang kami sediakan</div>
 					</div>
 					
 					<div class="block-content">
@@ -26,10 +26,11 @@
 						<div class="tab-nav" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="300">
 							<ul>
 								<li class="active">
-									<a data-toggle="tab" href="#platform_open_learning">
+									<a data-toggle="tab" href="#platform_open_learning" class="mb text-center">
 										<span>Platform Open</span>
 										<span>Learning</span>
-									</a>
+								</a>
+									
 								</li>
 								<li>
 									<a data-toggle="tab" href="#media_pembelajaran">
@@ -85,9 +86,11 @@
 											</div>
 															
 											<div class="product-buttons">
-												<a class="quickview" href="#">
-													<i class="fa fa-eye" aria-hidden="true"></i>
-												</a>
+												<form action="<?= base_url('cart/add') ?>" method="POST">
+												<input type="hidden" name="id_product" value="<?= $row->id ?>">
+													<input type="number" name="qty" value="1" class="form-control">
+													<button class="btn btn-primary" type="submit"><i class="fa fa-shopping-cart"></i></button>
+												</form>
 											</div>
 										</div>
 									<?php endforeach ?>	

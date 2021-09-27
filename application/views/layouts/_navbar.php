@@ -204,7 +204,7 @@
 										</li>
 
 										<li>
-											<a href="#footer">TTentang Kami</a>
+											<a href="#footer">Tentang Kami</a>
 										</li>
 
 									</ul>
@@ -216,7 +216,7 @@
 								<!-- Logo -->		
 								<div class="logo">
 									<a href="<?= base_url() ?>">
-										<img class="img-responsive" src="assets/img/Logo/dli-logo.png" alt="Logo">
+										<img class="img-responsive" src="assets/img/Logo/dli-store.png" alt="Logo">
 									</a>
 								</div>
 								

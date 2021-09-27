@@ -4,14 +4,14 @@
 <head>
 	<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" scontent="IE=edge">
-		<title>DLI - Shop</title>
+		<title>DLI Store</title>
 		
 		<meta name="keywords" content="Murah, Kualitas Bagus, Pengiriman Cepat">
 		<meta name="description" content="Harga pasti dijamin murah, Kualitas pun dijamin, Pengiriman juga cepat">
 		<meta name="author" content="tivatheme">
 		
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/img/Logo/dli-logo.png" type="image/png">
+		<link rel="shortcut icon" href="assets/img/icon/icon.png" type="image/png">
 		
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">

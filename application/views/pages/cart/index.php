@@ -3,11 +3,11 @@
 				<!-- Breadcrumb -->
 				<div id="breadcrumb">
 					<div class="container">
-						<h2 class="title">Shopping Cart</h2>
+						<h2 class="title">Keranjang Belanja</h2>
 						
 						<ul class="breadcrumb">
 							<li><a href="<?= base_url('');?>" title="Home">Home</a></li>
-							<li><span>Shopping Cart</span></li>
+							<li><span>Keranjang Belanja</span></li>
 						</ul>
 					</div>
 				</div>
@@ -82,8 +82,8 @@
 						</div>
 						
 						<div class="checkout-btn">
-							<a href="<?= base_url('checkout') ?>" class="btn btn-primary pull-right" title="Proceed to checkout">
-								<span>Proceed to checkout</span>
+							<a href="<?= base_url('checkout') ?>" class="btn btn-primary pull-right" title="Konfirmasi Pemesanan">
+								<span>Konfirmasi Pemesanan</span>
 								<i class="fa fa-angle-right ml-xs"></i>
 							</a>
 						</div>

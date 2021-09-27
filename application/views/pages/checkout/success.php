@@ -4,11 +4,11 @@
 				<!-- Breadcrumb -->
 				<div id="breadcrumb">
 					<div class="container">
-						<h2 class="title">Login</h2>
+						<h2 class="title">Pembayaran</h2>
 						
 						<ul class="breadcrumb">
 							<li><a href="<?= base_url();?>" title="Home">Home</a></li>
-							<li><span>Login</span></li>
+							<li><span>Pembayaran</span></li>
 						</ul>
 					</div>
 				</div>
@@ -31,7 +31,7 @@
                                         <li>Total pembayaran: <strong>Rp.<?= number_format($content->total, 0, ',', '.') ?>,-</strong></li>
                                     </ol>
                                     <p>Jika sudah silahkan kirimkan bukti transfer di halaman konfirmasi atau bisa <a href="<?= base_url("myorder/detail/$content->invoice") ?>">klik disini</a></p>
-                                    <a href="<?= base_url() ?>" class="btn btn-primary"><i class="fas fa-chevron-circle-left"></i> Kembali</a>
+                                    <a href="<?= base_url() ?>" class="btn btn-primary"><i class="fa fa-chevron-circle-left"></i> Kembali</a>
                                 </div>
                             </div>
 						</div>

@@ -2,11 +2,11 @@
 				<!-- Breadcrumb -->
 				<div id="breadcrumb">
 					<div class="container">
-						<h2 class="title">Shopping Cart</h2>
+						<h2 class="title">Konfirmasi Pemesanan</h2>
 						
 						<ul class="breadcrumb">
 							<li><a href="#" title="Home">Home</a></li>
-							<li><span>Shopping Cart</span></li>
+							<li><span>Konfirmasi Pemesanan</span></li>
 						</ul>
 					</div>
 				</div>
@@ -134,7 +134,7 @@
 									</div>
 
 									<div class="pull-right">
-										<input type="submit" value="Place Order" class="btn btn-primary">
+										<input type="submit" value="Pesan Sekarang" class="btn btn-primary">
 									</div>
 								</form>
 							</div>
