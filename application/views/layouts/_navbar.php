@@ -207,6 +207,10 @@
 											<a href="#footer">Tentang Kami</a>
 										</li>
 
+										<li>
+											<a href="">Bantuan</a>
+										</li>
+
 									</ul>
 								</div>
 							</div>
@@ -236,11 +240,20 @@
 								
 								<!-- Cart -->
 								<div class="block-cart dropdown">
-									<a href="<?= base_url('cart') ?>">
-										<div class="cart-title">
-											<i class="fa fa-shopping-basket" aria-hidden="true"></i>
-										</div>
-									</a>
+									<?php if (!$this->session->userdata('is_login')) : ?>
+										<a href="<?= base_url('login') ?>">
+											<div class="cart-title">
+												<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+											</div>
+										</a>
+									<?php else : ?>
+										<a href="<?= base_url('cart') ?>">
+											<div class="cart-title">
+												<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+											</div>
+										</a>
+									<?php endif ?>
+									
 								</div>
 								
 								

@@ -1,3 +1,15 @@
+<!-- Breadcrumb -->
+				<div id="breadcrumb">
+					<div class="container">
+						<h2 class="title">Details</h2>
+						
+						<ul class="breadcrumb">
+							<li><a href="<?= base_url();?>" title="Home">Home</a></li>
+							<li><span>Details</span></li>
+						</ul>
+					</div>
+				</div>
+
 <div id="content" class="site-content">
     <div class="container">
 					<div class="product-detail">
@@ -84,26 +96,25 @@
 												<div class="product-quantity">
 													<span class="control-label">QTY :</span>
 													<div class="qty">
-														<div class="input-group">
-															<input type="text" name="qty" value="1" data-min="1">
-															<span class="adjust-qty">
-																<span class="adjust-btn plus">+</span>
-																<span class="adjust-btn minus">-</span>
-															</span>
-														</div>
+														<form action="<?= base_url('cart/add') ?>" method="POST">
+														<input type="hidden" name="id_product" value="<?= $content='id' ?>">
+															<div class="input-group">
+																<input type="number" name="qty" value="1" class="form-control">
+															</div>
 													</div>
 												</div>
 												
 												<div class="product-buttons">
-													<a class="add-to-cart" href="#">
+													<button class="add-to-cart" type="submit">
 														<i class="fa fa-shopping-basket" aria-hidden="true"></i>
 														<span>Add To Cart</span>
-													</a>
-													
+													</button>
+												</form>
 													<a class="add-wishlist" href="#">
 														<i class="fa fa-heart" aria-hidden="true"></i>												
 													</a>
 												</div>
+												
 											</div>
 											
 											<div class="product-share border-bottom">
@@ -492,3 +503,5 @@
 					</div>
 				</div>
 </div>
+
+<hr>

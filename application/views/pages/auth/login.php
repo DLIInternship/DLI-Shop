@@ -1,6 +1,6 @@
 
-			<!-- Main Content -->
-			<div id="content" class="site-content">
+<!-- Main Content -->
+<div id="content" class="site-content">
 				<!-- Breadcrumb -->
 				<div id="breadcrumb">
 					<div class="container">
@@ -59,3 +59,5 @@
 				</div>
 			</div>
     </div>
+
+	<hr>

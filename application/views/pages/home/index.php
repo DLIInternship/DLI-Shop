@@ -86,11 +86,34 @@
 											</div>
 															
 											<div class="product-buttons">
-												<form action="<?= base_url('cart/add') ?>" method="POST">
-												<input type="hidden" name="id_product" value="<?= $row->id ?>">
-													<input type="number" name="qty" value="1" class="form-control">
-													<button class="btn btn-primary" type="submit"><i class="fa fa-shopping-cart"></i></button>
+													<?php if (!$this->session->userdata('is_login')) : ?>
+														<button type="submit" hidden>
+															<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+														</button>
+													<?php else : ?>
+														<form action="<?= base_url('cart/add') ?>" method="POST">
+														<input type="hidden" name="id_product" value="<?= $row->id ?>">
+														<input type="hidden" name="qty" value="1" class="form-control">
+														<button class="add-to-cart" type="submit">
+															<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+														</button>
+													<?php endif ?>
+
+													<a class="quickview" href="<?= base_url('details')?>">
+														<i class="fa fa-eye" aria-hidden="true"></i>
+													</a>
+
+													<?php if (!$this->session->userdata('is_login')) : ?>
+														<a class="add-wishlist" href="" hidden>
+															<i class="fa fa-heart" aria-hidden="true"></i>
+														</a>
+													<?php else : ?>
+														<a class="add-wishlist" href="">
+															<i class="fa fa-heart" aria-hidden="true"></i>
+														</a>
+													<?php endif ?>
 												</form>
+												
 											</div>
 										</div>
 									<?php endforeach ?>	

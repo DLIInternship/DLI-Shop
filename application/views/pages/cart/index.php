@@ -34,18 +34,18 @@
 											<a title="Remove this item" class="remove" href="#">
 												<form action="<?= base_url("cart/delete/$row->id") ?>" method="POST">
                                                     <input type="hidden" name="id" value="<?= $row->id ?>">
-                                                    <button type="submit" onclick="return confirm('Are you sure?')"><i class="fa fa-times"></i></button>
+                                                    <button class="btn-danger" type="submit" onclick="return confirm('Are you sure?')"><i class="fa fa-times"></i></button>
                                                     
                                                 </form>
 											</a>
 										</td>
 										<td>
-											<a href="product-detail-left-sidebar.html">
-												<img src="<?= $row->image ? base_url("images/product/$row->image") : base_url("images/product/default.png") ?>" alt="" class="card-img-top">
+											<a href="<?= base_url("details") ?>">
+												<img src="<?= $row->image ? base_url("images/product/$row->image") : base_url("images/product/default.png") ?>" alt="" class="card-img-top" height="50px" width="55px">
 											</a>
 										</td>
 										<td>
-											<a href="product-detail-left-sidebar.html" class="product-name"><?= $row->title ?></a>
+											<a href="<?= base_url("details") ?>" class="product-name"><?= $row->title ?></a>
 										</td>
 										<td class="text-center">
 											Rp.<?= number_format($row->price, 0, ',', '.') ?>,-
@@ -54,14 +54,15 @@
 											<div class="product-quantity">
 												<div class="qty">
 													<form action="<?= base_url("cart/update/$row->id") ?>" method="POST">
-                                            <input type="hidden" name="id" value="<?= $row->id ?>">
-                                            <div class="input-group">
-                                                <input type="number" name="qty" class="form-control text-center" value="<?= $row->qty ?>">
-                                                <div class="input-group-append">
-                                                    <button type="submit" class="btn btn-info"><i class="fa fa-refresh"></i></button>
-                                                </div>
-                                            </div>
-                                        </form>
+														<input type="hidden" name="id" value="<?= $row->id ?>">
+														<div class="input-group">
+															<input type="number" name="qty" class="form-control text-center" value="<?= $row->qty ?>">
+															<div class="input-group-append">
+																<button type="submit" class="btn btn-info"><i class="fa fa-refresh"></i></button>
+															</div>
+														</div>
+													</form>
+												</div>
 											</div>
 										</td>
 										<td class="text-center">
@@ -90,3 +91,5 @@
 					</div>
 				</div>
 			</div>
+
+			<hr>
